@@ -1,0 +1,67 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1568528139106-c295280e4757?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Encode Sans SC', sans-serif;
+    color:rgb(195, 221, 255);
+    font-size: 45px;
+}
+
+.upper-container {
+    margin: 0;
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.mid-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.lower-container {
+    margin: 0;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.upper-container button {
+    padding: 65px;
+    background-color: #FFFFFF;
+}
+
+.mid-container button {
+    padding: 65px;
+    background-color: #FFFFFF;
+}
+
+.lower-container button {
+    padding: 65px;
+    background-color: #FFFFFF;
+}
+
+p {
+    text-align: center;
+    font-family: 'Encode Sans SC', sans-serif;
+    color: whitesmoke;
+    font-size: 35px;
+}
+
+button:hover {
+    background-color: rgb(187, 187, 187);
+}

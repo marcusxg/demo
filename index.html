@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Square Game</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@700&display=swap" rel="stylesheet"> 
+        <link rel='stylesheet' type='text/css' href='Square Game.css'>
+    </head>
+    <body>
+        <h1>Square Game</h1>
+        <p>Click the correct box</p>
+        <div class='upper-container'>
+            <button name = "my_radio" class ='button' onclick="button('myButton1')" id="myButton1" value=" "></button>
+            <button name = 'my_radio' class ='button' onclick="button('myButton2')" id="myButton2" value=" "></button>
+            <button name = 'my_radio' class ='button' onclick="button('myButton3')" id="myButton3" value=" "></button>
+        </div>
+        <div class='mid-container'>
+            <button name = "my_radio" class ='button' onclick="button('myButton4')" id="myButton4" value=" "></button>
+            <button name = "my_radio" class ='button' onclick="button('myButton5')" id="myButton5" value=" "></button>
+            <button name = "my_radio" class ='button' onclick="button('myButton6')" id="myButton6" value=" "></button>
+        </div>
+        <div class='lower-container'>
+            <button name = "my_radio" class ='button' onclick="button('myButton7')" id="myButton7" value=" "></button>
+            <button name = "my_radio" class ='button' onclick="button('myButton8')" id="myButton8" value=" "></button>
+            <button name = "my_radio" class ='button' onclick="button('myButton9')" id="myButton9" value=" "></button>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+            arr = ["X", "Y", "Z"]
+            document.getElementTagName("button").elements[0].value = result
+
+            function button(id) {
+                $(document).ready(function() {
+                    result = arr[Math.floor(Math.random() * arr.length)];
+                            if (result == 'X') {
+                                document.getElementById(id).style.background='green';
+                                //document.getElementById(id).disabled = true;
+                                alert('You won!')
+                                //location.reload();
+                                exit()
+                                return false;
+                        }
+                            else if(result != 'X') {
+                                document.getElementById(id).style.background='red';
+                                alert('You lost! Try again! ')
+                                location.reload();
+                                return false;
+                    }
+            });
+            }
+
+            button('myButton1');
+            button('myButton2');
+            button('myButton3');
+            button('myButton4');
+            button('myButton5');
+            button('myButton6');
+            button('myButton7');
+            button('myButton8');
+            button('myButton9');
+        </script>
+    </body>
+</html>
